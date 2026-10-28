@@ -30,10 +30,11 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: hsl(30, 38%, 92%);
+  gap: 20px;
 }
 
 .card-image img {
@@ -79,15 +80,13 @@ button {
   width: 100%;
   margin-top: 20px;
   padding: 14px;
-
   border: none;
   border-radius: 8px;
-
   background-color: hsl(158, 36%, 37%);
   color: white;
-
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -98,7 +97,6 @@ button {
 
 button:hover {
   background-color: hsl(158, 42%, 18%);
-  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 600px) {
@@ -110,4 +108,13 @@ button:hover {
   .card-image img {
     height: 300px;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
